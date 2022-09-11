@@ -31,6 +31,10 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+
+    // var elem = document.getElementById('video');
+    // elem.style.height = 30 + "vw";
+
     $('.gallery-slider').slick({
         slidesToScroll: 1,
         autoplay: true,
@@ -40,3 +44,8 @@ $(document).ready(function() {
         nextArrow: '<button class="btn btn-link" type="button" data-role="none" class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>',
     });
 });
+
+// $(window).resize(function() {
+//     var elem = document.getElementById('video');
+//     elem.style.height = 30 + "vw";
+// });

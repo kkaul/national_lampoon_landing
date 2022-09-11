@@ -24,9 +24,9 @@ img {
 
 #home {
     position: relative;
-    padding: 30px;
-    padding-top: 0;
+    padding-top: 30px;
     background-color: #e4e5d7;
+    height: 80vh;
 }
 
 #home h1 {
@@ -46,7 +46,27 @@ img {
     position: relative;
 }
 
-.video-container {}
+#video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+@media only screen and (max-width: 1700px) {
+    #video {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        height: 800px;
+    }
+    #home {
+        position: relative;
+        padding-top: 30px;
+        background-color: #e4e5d7;
+        height: 100%;
+    }
+}
 
 
 /* Poison Pill */
