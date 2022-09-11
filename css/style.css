@@ -30,7 +30,7 @@ img {
 }
 
 #home h1 {
-    font-family: cooper;
+    font-family: cooper-black-std, serif;
     font-size: 4rem;
     color: #ffdd00;
     text-shadow: 2px 4px black, black 0px 0px 2px;
@@ -57,7 +57,7 @@ img {
 }
 
 #poison-pill h3 {
-    font-family: cooper;
+    font-family: cooper-black-std, serif;
     font-size: 2.5rem;
     color: #ffdd00;
     text-shadow: 2px 3px black, black 0px 0px 2px;
@@ -67,7 +67,7 @@ img {
 }
 
 #poison-pill h2 {
-    font-family: cooper;
+    font-family: cooper-black-std, serif;
     font-size: 3.5rem;
     color: #fff;
     text-shadow: 2px 3px black, black 0px 0px 2px;
@@ -84,7 +84,7 @@ img {
 }
 
 #roadmap h3 {
-    font-family: cooper;
+    font-family: cooper-black-std, serif;
     font-size: 2.5rem;
     color: #ffdd00;
     text-shadow: 2px 3px black, black 0px 0px 2px;
@@ -111,7 +111,7 @@ img {
 }
 
 #team h3 {
-    font-family: cooper;
+    font-family: cooper-black-std, serif;
     font-size: 2.5rem;
     color: #ffdd00;
     text-shadow: 2px 3px black, black 0px 0px 2px;
@@ -170,7 +170,7 @@ img {
 }
 
 #partners h3 {
-    font-family: cooper;
+    font-family: cooper-black-std, serif;
     font-size: 2.5rem;
     color: #ffdd00;
     text-shadow: 2px 3px black, black 0px 0px 2px;
@@ -207,7 +207,7 @@ img {
 }
 
 #press h3 {
-    font-family: cooper;
+    font-family: cooper-black-std, serif;
     font-size: 2.5rem;
     color: #ffdd00;
     text-shadow: 2px 3px black, black 0px 0px 2px;
@@ -281,7 +281,7 @@ img {
 }
 
 #gallery h3 {
-    font-family: cooper;
+    font-family: cooper-black-std, serif;
     font-size: 2.5rem;
     color: #ffdd00;
     text-shadow: 2px 3px black, black 0px 0px 2px;
