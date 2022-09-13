@@ -240,7 +240,7 @@ img {
     background-size: 100% 100%;
     padding: 30px;
     position: relative;
-    min-height: 500px;
+    min-height: 800px;
 }
 
 #partners .background-hand {
@@ -259,13 +259,13 @@ img {
     text-shadow: 2px 3px black, black 0px 0px 2px;
     text-align: center;
     margin-bottom: 30px;
+    margin-top: 50px;
 }
 
 #partners .partner {
+    margin-top: 80px;
     justify-content: center;
-    align-items: top;
     padding: 20px;
-    margin-top: 30px;
 }
 
 #partners .partner img {
@@ -382,6 +382,10 @@ img {
     color: black;
 }
 
+#gallery .slick-list {
+    box-shadow: 0.5rem 0.5rem black;
+}
+
 #gallery .error {
     width: 350px;
     height: 180px;
@@ -462,6 +466,17 @@ img {
     margin-top: -2px;
     margin-left: -4px;
     line-height: 17px;
+}
+
+#gallery .slick-slide {
+    height: 500px;
+}
+
+#gallery .slick-track {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
 }
 
 
