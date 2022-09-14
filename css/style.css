@@ -35,6 +35,7 @@ img {
     width: unset;
     left: 0;
     bottom: -80px;
+    padding: 30px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -52,9 +53,20 @@ img {
 
 #home {
     position: relative;
-    padding-top: 30px;
-    background-color: #e4e5d7;
     height: 80vh;
+}
+
+#video {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+#home #video-mobile {
+    display: none;
 }
 
 #home .header-text {
@@ -69,7 +81,7 @@ img {
 
 #home h1 {
     font-family: cooper-black-std, serif;
-    font-size: 4rem;
+    font-size: 6rem;
     color: #ffdd00;
     text-shadow: 2px 4px black, black 0px 0px 2px;
     margin-top: 30px;
@@ -77,10 +89,8 @@ img {
     margin-bottom: 30px;
 }
 
-@media only screen and (max-width: 510px) {
-    #home .container-fluid {
-        justify-content: center;
-    }
+#home h4 {
+    font-size: 2rem;
 }
 
 #home #rocket-img {
@@ -107,35 +117,88 @@ img {
     margin-right: 10px;
 }
 
-#video {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 90%;
-}
-
-@media only screen and (max-width: 700px) {
-    #video {
-        position: relative;
-        right: 0;
-        bottom: 0;
-        height: auto;
-        width: 100%;
+@media only screen and (max-width: 1750px) {
+    #home h4 {
+        font-size: 2rem;
+        max-width: 500px;
     }
 }
 
-@media only screen and (max-width: 1700px) {
-    #video {
-        position: relative;
-        right: 0;
-        bottom: 0;
-        height: 800px;
-    }
+@media only screen and (max-width: 980px) {
     #home {
-        position: relative;
-        padding-top: 30px;
         background-color: #e4e5d7;
         height: 100%;
+        text-align: center;
+    }
+    #home h1 {
+        font-size: 4rem;
+    }
+    #home h4 {
+        font-size: 1.5rem;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    #home .text-wrapper {
+        display: block!important;
+    }
+    #video {
+        display: none;
+    }
+    #home #video-mobile {
+        display: block;
+        height: 800px;
+        width: 100%;
+        height: auto;
+        position: relative;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    #home h1 {
+        font-size: 2.5rem;
+        line-height: 1;
+        margin: 0;
+    }
+    #home h4 {
+        font-size: 1.5rem;
+        max-width: 400px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    #home .header-text {
+        margin-top: 80px;
+    }
+    .navbar {
+        background-color: black;
+        color: white;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        position: fixed;
+    }
+    .navbar-brand img {
+        height: 50px;
+    }
+    #home .header-links i {
+        color: white;
+    }
+    #home .header-links img {
+        filter: brightness(0) invert(1);
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    #home .container-fluid {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .navbar-brand img {
+        height: 30px;
     }
 }
 
@@ -160,13 +223,13 @@ img {
 
 #poison-pill h2 {
     font-family: cooper-black-std, serif;
-    font-size: 3.5rem;
+    font-size: 5.5rem;
     color: #fff;
     text-shadow: 2px 3px black, black 0px 0px 2px;
 }
 
 #poison-pill #poison-pill-video {
-    height: 500px;
+    height: 600px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -179,6 +242,28 @@ img {
 #poison-pill h4 {
     font-family: adobe-garamond-pro, serif;
     color: black;
+    font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 980px) {
+    #poison-pill {
+        padding-bottom: 50px;
+    }
+    #poison-pill h2 {
+        font-size: 4rem;
+        margin: 30px 0;
+        line-height: 1;
+    }
+    #poison-pill h4 {
+        font-size: 2rem;
+        margin: 30px 0;
+        line-height: 1.2;
+    }
+    #poison-pill .text-wrapper {
+        justify-content: center!important;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
 }
 
 
@@ -219,6 +304,12 @@ img {
     width: 100%;
     height: 100%;
     max-width: 600px;
+}
+
+@media only screen and (max-width: 980px) {
+    #roadmap h3 {
+        margin-top: 50px;
+    }
 }
 
 
@@ -266,6 +357,26 @@ img {
     color: black;
     font-size: 1.5rem;
     margin-right: 10px;
+}
+
+@media only screen and (max-width: 980px) {
+    #team .member-image img {
+        height: 100px;
+        width: 100px;
+        box-shadow: 0.25rem 0.25rem black;
+        border-radius: 100px;
+    }
+    #team .member-details .name {
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #fff;
+    }
+    #team .member-details .position {
+        font-family: cooper-black-std, serif;
+        font-size: .8rem;
+        color: #fff;
+    }
 }
 
 
