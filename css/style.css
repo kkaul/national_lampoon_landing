@@ -190,12 +190,6 @@ img {
     }
 }
 
-@media only screen and (max-width: 510px) {
-    #home .container-fluid {
-        justify-content: center;
-    }
-}
-
 @media only screen and (max-width: 980px) {
     .navbar-brand img {
         height: 30px;
@@ -223,13 +217,22 @@ img {
 
 #poison-pill h2 {
     font-family: cooper-black-std, serif;
-    font-size: 5.5rem;
+    font-size: 5rem;
     color: #fff;
     text-shadow: 2px 3px black, black 0px 0px 2px;
 }
 
 #poison-pill #poison-pill-video {
     height: 600px;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 1641px) {
+    #poison-pill .text-wrapper {
+        justify-content: center!important;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
 }
 
 @media only screen and (max-width: 600px) {
