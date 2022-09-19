@@ -53,7 +53,7 @@ img {
 
 #home {
     position: relative;
-    height: 80vh;
+    height: 98vh;
 }
 
 #video {
@@ -181,6 +181,7 @@ img {
     }
     .navbar-brand img {
         height: 50px;
+        width: auto;
     }
     #home .header-links i {
         color: white;
@@ -193,6 +194,7 @@ img {
 @media only screen and (max-width: 980px) {
     .navbar-brand img {
         height: 30px;
+        width: auto;
     }
 }
 
@@ -243,7 +245,6 @@ img {
 }
 
 #poison-pill h4 {
-    font-family: adobe-garamond-pro, serif;
     color: black;
     font-size: 2.5rem;
 }
